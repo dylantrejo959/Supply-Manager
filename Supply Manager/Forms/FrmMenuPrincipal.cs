@@ -8,13 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Supply_Manager
+namespace Supply_Manager.Forms
 {
-    public partial class Form1 : Form
+    public partial class FrmMenuPrincipal : Form
     {
-        public Form1()
+        public FrmMenuPrincipal()
         {
             InitializeComponent();
+        }
+
+        private void menuInsumos_Click(object sender, EventArgs e)
+        {
+            FrmInsumos frm = new FrmInsumos();
+
+            frm.ShowDialog();
         }
     }
 }
