@@ -76,5 +76,20 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
+    <Folder Include="Documentation\" />
+    <Folder Include="Entities\" />
+    <Folder Include="Factory\" />
+    <Folder Include="Forms\" />
+    <Folder Include="Services\" />
+    <Folder Include="Utils\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database\DiseñoBD.sql">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
