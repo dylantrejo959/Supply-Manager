@@ -90,13 +90,9 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="UI\Forms\FrmInsumos.resx">
       <DependentUpon>FrmInsumos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UI\Forms\FrmLogin.resx">
-      <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Forms\FrmMenuPrincipal.resx">
       <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
@@ -127,8 +123,6 @@
       <Generator>MSDataSetGenerator</Generator>
     </Content>
     <Content Include="obj\Debug\Supply Manager.csproj.FileListAbsolute.txt" />
-    <Content Include="Resources\box.png" />
-    <Content Include="Resources\box2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
