@@ -1,6 +1,5 @@
 ﻿using Supply_Manager.Entities;
-using Supply_Manager.Forms;
-using Supply_Manager.Services;
+using Supply_Manager.BLL.Services;
 using Supply_Manager.Utils;
 using System;
 using System.Collections.Generic;
@@ -12,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Supply_Manager
+namespace Supply_Manager.UI.Forms
 {
     public partial class FrmLogin : Form
     {

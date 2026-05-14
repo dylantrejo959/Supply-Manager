@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Supply_Manager.Forms
+namespace Supply_Manager.UI.Forms
 {
     public partial class FrmMenuPrincipal : Form
     {

@@ -1,4 +1,4 @@
-﻿namespace Supply_Manager.Forms
+﻿namespace Supply_Manager.UI.Forms
 {
     partial class FrmMenuPrincipal
     {

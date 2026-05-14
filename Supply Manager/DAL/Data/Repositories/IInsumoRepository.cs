@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Supply_Manager.Entities;
 
-namespace Supply_Manager.Data.Repositories
+namespace Supply_Manager.DAL.Data.Repositories
 {
     public interface IInsumoRepository
     {

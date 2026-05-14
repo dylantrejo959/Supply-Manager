@@ -8,7 +8,7 @@ using Supply_Manager.Utils;
 using System.Data;
 using System.Data.SqlClient;
 
-namespace Supply_Manager.Services
+namespace Supply_Manager.BLL.Services
 {
     internal class AuthService
     {

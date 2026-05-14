@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Supply_Manager.Data.UnitOfWork;
+using Supply_Manager.DAL.Data.UnitOfWork;
 using Supply_Manager.Entities;
 using Supply_Manager.Factory;
 
-namespace Supply_Manager.Forms
+namespace Supply_Manager.UI.Forms
 {
     public partial class FrmInsumos : Form
     {

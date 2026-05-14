@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Supply_Manager.Data.Repositories;
+using Supply_Manager.DAL.Data.Repositories;
 
-namespace Supply_Manager.Data.UnitOfWork
+namespace Supply_Manager.DAL.Data.UnitOfWork
 {
     public class UnitOfWork : IUnitOfWork
     {

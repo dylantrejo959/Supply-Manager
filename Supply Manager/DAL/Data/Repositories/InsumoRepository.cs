@@ -7,7 +7,7 @@ using Supply_Manager.Entities;
 using Supply_Manager.Utils;
 using System.Data.SqlClient;
 
-namespace Supply_Manager.Data.Repositories
+namespace Supply_Manager.DAL.Data.Repositories
 {
     public class InsumoRepository : IInsumoRepository
     {

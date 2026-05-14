@@ -47,10 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data\Repositories\IInsumoRepository.cs" />
-    <Compile Include="Data\Repositories\InsumoRepository.cs" />
-    <Compile Include="Data\UnitOfWork\IUnitOfWork.cs" />
-    <Compile Include="Data\UnitOfWork\UnitOfWork.cs" />
+    <Compile Include="BLL\Services\AuthService.cs" />
+    <Compile Include="DAL\Data\Repositories\IInsumoRepository.cs" />
+    <Compile Include="DAL\Data\Repositories\InsumoRepository.cs" />
+    <Compile Include="DAL\Data\UnitOfWork\IUnitOfWork.cs" />
+    <Compile Include="DAL\Data\UnitOfWork\UnitOfWork.cs" />
     <Compile Include="Entities\Area.cs" />
     <Compile Include="Entities\Insumo.cs" />
     <Compile Include="Entities\Movimiento.cs" />
@@ -58,35 +59,29 @@
     <Compile Include="Entities\Rol.cs" />
     <Compile Include="Entities\Usuario.cs" />
     <Compile Include="Factory\IRepositoryFactory.cs" />
-    <Compile Include="Forms\FrmInsumos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FrmInsumos.Designer.cs">
-      <DependentUpon>FrmInsumos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FrmLogin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FrmLogin.Designer.cs">
-      <DependentUpon>FrmLogin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FrmMenuPrincipal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FrmMenuPrincipal.Designer.cs">
-      <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
-    </Compile>
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\AuthService.cs" />
+    <Compile Include="UI\Forms\FrmInsumos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\FrmInsumos.Designer.cs">
+      <DependentUpon>FrmInsumos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\FrmMenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\FrmMenuPrincipal.Designer.cs">
+      <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Utils\DbConnectionSingleton.cs" />
     <Compile Include="Utils\SesionUsuario.cs" />
-    <EmbeddedResource Include="Forms\FrmInsumos.resx">
-      <DependentUpon>FrmInsumos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FrmMenuPrincipal.resx">
-      <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -96,6 +91,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UI\Forms\FrmInsumos.resx">
+      <DependentUpon>FrmInsumos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\FrmMenuPrincipal.resx">
+      <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\Supply Manager.csproj.AssemblyReference.cache" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -110,13 +113,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="bin\Debug\" />
     <Folder Include="Documentation\" />
+    <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Database\DiseñoBD.sql">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
     </Content>
+    <Content Include="obj\Debug\Supply Manager.csproj.FileListAbsolute.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
