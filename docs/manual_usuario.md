@@ -78,15 +78,6 @@ Tres pestañas de análisis:
   - Días estimados hasta que el stock llegue al nivel mínimo
   - Cantidad sugerida de reorden para cubrir 30 días adicionales
 
-#### Capturas de pantalla
-
-> **Instrucción:** En el documento Word, insertar capturas de las siguientes pantallas:
-> 1. FrmLogin — pantalla de inicio de sesión
-> 2. FrmMenuPrincipal — menú con usuario admin (todos los módulos visibles)
-> 3. FrmInsumos — listado de insumos con filtros
-> 4. FrmMovimientos — registro de movimiento con grid de historial
-> 5. FrmReportes — tab de proyección de reabastecimiento con datos
-
 #### Casos básicos de uso
 
 **CU01 — Registrar una entrada de insumos**
