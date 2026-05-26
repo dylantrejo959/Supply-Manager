@@ -11,5 +11,6 @@ namespace Supply_Manager.Entities
         public int IdUsuario { get; set; }
         public string NombreUsuario { get; set; }
         public string Rol { get; set; }
+        public bool Estado { get; set; } = true;
     }
 }

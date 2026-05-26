@@ -14,5 +14,6 @@ namespace Supply_Manager.Entities
         public int StockActual { get; set; }
         public int StockMinimo { get; set; }
         public string UnidadMedida { get; set; }
+        public bool Estado { get; set; } = true;
     }
 }

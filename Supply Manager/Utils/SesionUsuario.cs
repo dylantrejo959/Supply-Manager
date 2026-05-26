@@ -1,9 +1,4 @@
-﻿using Supply_Manager.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Supply_Manager.Entities;
 
 namespace Supply_Manager.Utils
 {
@@ -23,8 +18,23 @@ namespace Supply_Manager.Utils
 
         public static bool EsAdministrador()
         {
-            return UsuarioActual != null
-                && UsuarioActual.Rol == "Administrador";
+            return UsuarioActual?.Rol == "Administrador";
+        }
+
+        public static bool EsAlmacenista()
+        {
+            return UsuarioActual?.Rol == "Almacenista";
+        }
+
+        public static bool EsSupervisor()
+        {
+            return UsuarioActual?.Rol == "Supervisor";
+        }
+
+        // Puede registrar movimientos y hacer CRUD de insumos/proveedores/áreas
+        public static bool PuedeModificar()
+        {
+            return EsAdministrador() || EsAlmacenista();
         }
     }
 }

@@ -1,8 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Supply_Manager.DAL.Data.Repositories;
 
 namespace Supply_Manager.DAL.Data.UnitOfWork
@@ -10,5 +5,10 @@ namespace Supply_Manager.DAL.Data.UnitOfWork
     public interface IUnitOfWork
     {
         IInsumoRepository InsumoRepository { get; }
+        IProveedorRepository ProveedorRepository { get; }
+        IMovimientoRepository MovimientoRepository { get; }
+        IAreaRepository AreaRepository { get; }
+        IUsuarioRepository UsuarioRepository { get; }
+        IReporteRepository ReporteRepository { get; }
     }
 }

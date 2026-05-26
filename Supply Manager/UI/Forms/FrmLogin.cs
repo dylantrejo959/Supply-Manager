@@ -58,5 +58,12 @@ namespace Supply_Manager.UI.Forms
         {
             Application.Exit();
         }
+
+        private void FrmLogin_Resize(object sender, EventArgs e)
+        {
+            panel2.Left = (this.ClientSize.Width - panel2.Width) / 2;
+            panel2.Top = (this.ClientSize.Height - panel2.Height) / 2;
+            flowLayoutPanel1.Width = this.ClientSize.Width;
+        }
     }
 }

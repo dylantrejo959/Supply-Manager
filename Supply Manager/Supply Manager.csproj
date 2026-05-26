@@ -48,14 +48,34 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\Services\AuthService.cs" />
+    <Compile Include="BLL\Services\AreaService.cs" />
+    <Compile Include="BLL\Services\InsumoService.cs" />
+    <Compile Include="BLL\Services\MovimientoService.cs" />
+    <Compile Include="BLL\Services\ProveedorService.cs" />
+    <Compile Include="BLL\Services\ReporteService.cs" />
+    <Compile Include="BLL\Services\UsuarioService.cs" />
     <Compile Include="DAL\Data\Repositories\IInsumoRepository.cs" />
     <Compile Include="DAL\Data\Repositories\InsumoRepository.cs" />
+    <Compile Include="DAL\Data\Repositories\IProveedorRepository.cs" />
+    <Compile Include="DAL\Data\Repositories\ProveedorRepository.cs" />
+    <Compile Include="DAL\Data\Repositories\IMovimientoRepository.cs" />
+    <Compile Include="DAL\Data\Repositories\MovimientoRepository.cs" />
+    <Compile Include="DAL\Data\Repositories\IAreaRepository.cs" />
+    <Compile Include="DAL\Data\Repositories\AreaRepository.cs" />
+    <Compile Include="DAL\Data\Repositories\IUsuarioRepository.cs" />
+    <Compile Include="DAL\Data\Repositories\UsuarioRepository.cs" />
+    <Compile Include="DAL\Data\Repositories\IReporteRepository.cs" />
+    <Compile Include="DAL\Data\Repositories\ReporteRepository.cs" />
     <Compile Include="DAL\Data\UnitOfWork\IUnitOfWork.cs" />
     <Compile Include="DAL\Data\UnitOfWork\UnitOfWork.cs" />
     <Compile Include="Entities\Area.cs" />
     <Compile Include="Entities\Insumo.cs" />
     <Compile Include="Entities\Movimiento.cs" />
+    <Compile Include="Entities\MovimientoDetalle.cs" />
     <Compile Include="Entities\Proveedor.cs" />
+    <Compile Include="Entities\ProyeccionReabastecimiento.cs" />
+    <Compile Include="Entities\ReporteConsumo.cs" />
+    <Compile Include="Entities\ReporteStockCritico.cs" />
     <Compile Include="Entities\Rol.cs" />
     <Compile Include="Entities\Usuario.cs" />
     <Compile Include="Factory\IRepositoryFactory.cs" />
@@ -80,6 +100,36 @@
     <Compile Include="UI\Forms\FrmMenuPrincipal.Designer.cs">
       <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Forms\FrmProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\FrmProveedores.Designer.cs">
+      <DependentUpon>FrmProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\FrmMovimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\FrmMovimientos.Designer.cs">
+      <DependentUpon>FrmMovimientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\FrmAreas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\FrmAreas.Designer.cs">
+      <DependentUpon>FrmAreas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\FrmUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\FrmUsuarios.Designer.cs">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\FrmReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\FrmReportes.Designer.cs">
+      <DependentUpon>FrmReportes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Utils\DbConnectionSingleton.cs" />
     <Compile Include="Utils\SesionUsuario.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -100,6 +150,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Forms\FrmMenuPrincipal.resx">
       <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\FrmProveedores.resx">
+      <DependentUpon>FrmProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\FrmMovimientos.resx">
+      <DependentUpon>FrmMovimientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\FrmAreas.resx">
+      <DependentUpon>FrmAreas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\FrmUsuarios.resx">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\FrmReportes.resx">
+      <DependentUpon>FrmReportes.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <None Include="obj\Debug\Supply Manager.csproj.AssemblyReference.cache" />

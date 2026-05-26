@@ -8,5 +8,7 @@ namespace Supply_Manager.Entities
 {
     public class Rol
     {
+        public int IdRol { get; set; }
+        public string NombreRol { get; set; }
     }
 }
