@@ -71,4 +71,4 @@ Supply Manager/
 
 ## Documentación
 
-La documentación completa del Sprint 2 se encuentra en `docs/Documentacion_Sprint2.md`, con los 24 apartados requeridos incluyendo arquitectura, patrones SOLID/GoF, normalización, SPs, casos de prueba y manual de usuario.
+La documentación completa se encuentra en `docs/Documentacion.pdf`,
